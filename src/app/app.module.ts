@@ -12,8 +12,10 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
-import { ParentComponent } from './parent-propert-binding/parent.component';
-import { ChildComponent } from './child-property-binding/child.component';
+import { ChildEventBindingComponent } from './child-event-binding/child-event-binding.component';
+import { ParentEventBindingComponent } from './parent-event-binding/parent-event-binding.component';
+import { ChildPropertyBindingComponent } from './child-property-binding/child-property-binding.component'
+import { ParentPropertyBindingComponent } from './parent-property-binding/parent-property-binding.component'
 
 @NgModule({
   declarations: [
@@ -27,8 +29,10 @@ import { ChildComponent } from './child-property-binding/child.component';
     NgStyleComponent,
     NgClassComponent,
     NgForComponent,
-    ParentComponent,
-    ChildComponent
+    ChildPropertyBindingComponent,
+    ParentPropertyBindingComponent,
+    ChildEventBindingComponent,
+    ParentEventBindingComponent
   ],
   imports: [
     BrowserModule,
