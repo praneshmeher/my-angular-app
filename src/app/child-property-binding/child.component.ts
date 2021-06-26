@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-  @Input() data:Array<any> = []
+  @Input('alias-data') data:Array<any> = []
   constructor() { }
 
   ngOnInit(): void {
