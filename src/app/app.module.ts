@@ -16,7 +16,8 @@ import { ChildEventBindingComponent } from './child-event-binding/child-event-bi
 import { ParentEventBindingComponent } from './parent-event-binding/parent-event-binding.component';
 import { ChildPropertyBindingComponent } from './child-property-binding/child-property-binding.component'
 import { ParentPropertyBindingComponent } from './parent-property-binding/parent-property-binding.component';
-import { LocalReferenceComponent } from './local-reference/local-reference.component'
+import { LocalReferenceComponent } from './local-reference/local-reference.component';
+import { ViewChildComponent } from './view-child/view-child.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { LocalReferenceComponent } from './local-reference/local-reference.compo
     ParentPropertyBindingComponent,
     ChildEventBindingComponent,
     ParentEventBindingComponent,
-    LocalReferenceComponent
+    LocalReferenceComponent,
+    ViewChildComponent
   ],
   imports: [
     BrowserModule,
