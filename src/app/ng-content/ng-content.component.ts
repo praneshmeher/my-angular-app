@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'app-ng-content',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgContentComponent implements OnInit {
 
+  @ContentChild('parencontentref') contentref:any
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngAfterContentChecked(){
+    console.log(this.contentref)
   }
 
 }
