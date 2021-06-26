@@ -1,20 +1,22 @@
-import { Directive, Renderer2, OnInit, ElementRef, HostListener, HostBinding } from '@angular/core';
+import { Directive, Renderer2, OnInit, ElementRef, HostListener, HostBinding, Input } from '@angular/core';
 
 @Directive({
   selector: '[appRendererDirective]'
 })
 export class RendererDirectiveDirective implements OnInit {
 
-  @HostBinding('style.background') color:any;
+  @Input() defaultbackground:any;
+  @HostBinding('style.background') background:any;
   constructor(private elementRef:ElementRef, private renderer:Renderer2) { }
 
   ngOnInit(){
+    this.background = this.defaultbackground
     this.renderer.setStyle(this.elementRef.nativeElement, 'color', 'red')
   }
 
   @HostListener('click') onClick(event:any){
     console.log('clicked')
-    this.color='green'
+    this.background='green'
   }
   
 }
