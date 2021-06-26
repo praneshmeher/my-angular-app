@@ -12,6 +12,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { ParentComponent } from './parent-propert-binding/parent.component';
+import { ChildComponent } from './child-property-binding/child.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { NgForComponent } from './ng-for/ng-for.component';
     NgIfComponent,
     NgStyleComponent,
     NgClassComponent,
-    NgForComponent
+    NgForComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
