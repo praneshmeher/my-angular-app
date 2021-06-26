@@ -12,7 +12,7 @@ export class EventBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onKeyUp(event:any){
+  onKeyUp(event:Event){
     console.log('clicked', (<HTMLInputElement>event.target).value)
   }
 
