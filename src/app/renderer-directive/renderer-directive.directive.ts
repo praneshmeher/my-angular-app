@@ -5,10 +5,10 @@ import { Directive, Renderer2, OnInit, ElementRef, HostListener } from '@angular
 })
 export class RendererDirectiveDirective implements OnInit {
 
-  constructor(private eleRef:ElementRef, private renderer:Renderer2) { }
+  constructor(private elementRef:ElementRef, private renderer:Renderer2) { }
 
   ngOnInit(){
-    this.renderer.setStyle(this.eleRef.nativeElement, 'color', 'red')
+    this.renderer.setStyle(this.elementRef.nativeElement, 'color', 'red')
   }
 
   @HostListener('click') click(event:any){
