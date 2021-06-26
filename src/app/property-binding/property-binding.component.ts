@@ -8,11 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PropertyBindingComponent implements OnInit {
 
   disableClick=true
-  constructor() {
-    setTimeout(() => {
-      this.disableClick=false
-    }, 5000);
-   }
+  constructor() { }
 
   ngOnInit(): void {
   }
