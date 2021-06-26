@@ -17,7 +17,8 @@ import { ParentEventBindingComponent } from './parent-event-binding/parent-event
 import { ChildPropertyBindingComponent } from './child-property-binding/child-property-binding.component'
 import { ParentPropertyBindingComponent } from './parent-property-binding/parent-property-binding.component';
 import { LocalReferenceComponent } from './local-reference/local-reference.component';
-import { ViewChildComponent } from './view-child/view-child.component'
+import { ViewChildComponent } from './view-child/view-child.component';
+import { NgContentComponent } from './ng-content/ng-content.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ViewChildComponent } from './view-child/view-child.component'
     ChildEventBindingComponent,
     ParentEventBindingComponent,
     LocalReferenceComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    NgContentComponent
   ],
   imports: [
     BrowserModule,
