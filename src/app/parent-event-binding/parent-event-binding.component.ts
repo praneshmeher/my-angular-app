@@ -12,4 +12,8 @@ export class ParentEventBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  parentClick(event:any){
+    console.log('parent', event)
+  }
+
 }

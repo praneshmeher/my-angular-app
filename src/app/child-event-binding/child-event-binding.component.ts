@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child-event-binding',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildEventBindingComponent implements OnInit {
 
+  @Output() emittedevent = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onChildClick(){
+    this.emittedevent.emit('child data')
   }
 
 }
