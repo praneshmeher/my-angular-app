@@ -20,6 +20,7 @@ import { LocalReferenceComponent } from './local-reference/local-reference.compo
 import { ViewChildComponent } from './view-child/view-child.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component'
+import { RendererDirectiveDirective } from './renderer-directive/renderer-directive.directive'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
     LocalReferenceComponent,
     ViewChildComponent,
     NgContentComponent,
-    LifecycleHooksComponent
+    LifecycleHooksComponent,
+    RendererDirectiveDirective
   ],
   imports: [
     BrowserModule,
