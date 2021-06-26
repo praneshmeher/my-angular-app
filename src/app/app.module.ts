@@ -9,6 +9,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayComponent,
-    NgIfComponent
+    NgIfComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,
