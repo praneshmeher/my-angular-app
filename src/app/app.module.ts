@@ -10,6 +10,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     EventBindingComponent,
     TwoWayComponent,
     NgIfComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgClassComponent
   ],
   imports: [
     BrowserModule,
