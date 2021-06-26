@@ -21,6 +21,7 @@ import { ViewChildComponent } from './view-child/view-child.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component'
 import { RendererDirectiveDirective } from './renderer-directive/renderer-directive.directive'
+import { AttributeDirectiveDirective } from './attribute-directive/attribute-directive.directive'
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { RendererDirectiveDirective } from './renderer-directive/renderer-direct
     ViewChildComponent,
     NgContentComponent,
     LifecycleHooksComponent,
-    RendererDirectiveDirective
+    RendererDirectiveDirective,
+    AttributeDirectiveDirective
   ],
   imports: [
     BrowserModule,
