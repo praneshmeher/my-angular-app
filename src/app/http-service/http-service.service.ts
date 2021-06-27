@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { map, catchError } from 'rxjs/operators'
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { throwError } from 'rxjs';
 
 @Injectable({
@@ -11,7 +11,10 @@ export class HttpServiceService {
   constructor(private http:HttpClient) { }
 
   postData(config:any){
-    this.http.post("https://reqres.in/api/users",config)
+    this.http.post("https://reqres.in/api/users",config,
+    {
+      headers:new HttpHeaders({'custom-header':'value'})
+    })
     .pipe(
       map((data:any)=>{
         return {...data, name : 'Pranesh'} 
