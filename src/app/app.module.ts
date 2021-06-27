@@ -23,7 +23,9 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
 import { RendererDirectiveDirective } from './renderer-directive/renderer-directive.directive'
 import { AttributeDirectiveDirective } from './attribute-directive/attribute-directive.directive';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
-import { DependancyInjectonComponent } from './dependancy-injecton/dependancy-injecton.component'
+import { DependancyInjectonComponent } from './dependancy-injecton/dependancy-injecton.component';
+import { DataServiceOneComponent } from './data-service-one/data-service-one.component';
+import { DataServiceTwoComponent } from './data-service-two/data-service-two.component'
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { DependancyInjectonComponent } from './dependancy-injecton/dependancy-in
     RendererDirectiveDirective,
     AttributeDirectiveDirective,
     NgSwitchComponent,
-    DependancyInjectonComponent
+    DependancyInjectonComponent,
+    DataServiceOneComponent,
+    DataServiceTwoComponent
   ],
   imports: [
     BrowserModule,
