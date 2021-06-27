@@ -27,7 +27,8 @@ import { DependancyInjectonComponent } from './dependancy-injecton/dependancy-in
 import { DataServiceOneComponent } from './data-service-one/data-service-one.component';
 import { DataServiceTwoComponent } from './data-service-two/data-service-two.component';
 import { CustomObservableComponent } from './custom-observable/custom-observable.component';
-import { PipesComponent } from './pipes/pipes.component'
+import { PipesComponent } from './pipes/pipes.component';
+import { ShortenPipePipe } from './shorten-pipe/shorten-pipe.pipe'
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { PipesComponent } from './pipes/pipes.component'
     DataServiceOneComponent,
     DataServiceTwoComponent,
     CustomObservableComponent,
-    PipesComponent
+    PipesComponent,
+    ShortenPipePipe
   ],
   imports: [
     BrowserModule,
