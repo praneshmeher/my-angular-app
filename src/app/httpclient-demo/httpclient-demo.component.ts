@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
+import { map } from 'rxjs/operators'
 
 @Component({
   selector: 'app-httpclient-demo',
@@ -15,6 +16,11 @@ export class HttpclientDemoComponent implements OnInit {
       "name": "morpheus",
       "job": "leader"
     })
+    .pipe(
+      map((data:any)=>{
+        return {...data, name : 'Pranesh'} 
+      })
+    )
     .subscribe((data)=>{
       console.log(data)
     })
