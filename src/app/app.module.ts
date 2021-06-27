@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'
-import { HttpClient } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http'
 
 
 import { AppComponent } from './app.component';
@@ -32,7 +32,8 @@ import { CustomObservableComponent } from './custom-observable/custom-observable
 import { PipesComponent } from './pipes/pipes.component';
 import { ShortenPipePipe } from './shorten-pipe/shorten-pipe.pipe';
 import { FilterPipePipe } from './filter-pipe/filter-pipe.pipe';
-import { AsyncPipeComponent } from './async-pipe/async-pipe.component'
+import { AsyncPipeComponent } from './async-pipe/async-pipe.component';
+import { HttpclientDemoComponent } from './httpclient-demo/httpclient-demo.component'
 
 @NgModule({
   declarations: [
@@ -64,12 +65,13 @@ import { AsyncPipeComponent } from './async-pipe/async-pipe.component'
     PipesComponent,
     ShortenPipePipe,
     FilterPipePipe,
-    AsyncPipeComponent
+    AsyncPipeComponent,
+    HttpclientDemoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
