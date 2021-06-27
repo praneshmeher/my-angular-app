@@ -14,6 +14,9 @@ export class DataServiceTwoComponent implements OnInit {
 
   ngOnInit(): void {
     this.data=this.dataService.data
+    this.dataService.dataUpdated.subscribe((data)=>{
+      console.log(data)
+    })
   }
 
 }
