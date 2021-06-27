@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ShortenPipePipe implements PipeTransform {
 
-  transform(value: any) {
-    return value.substring(0, 5) + '...';
+  transform(value: any, limit:any) {
+    return value.substring(0, limit) + '...';
   }
 
 }
