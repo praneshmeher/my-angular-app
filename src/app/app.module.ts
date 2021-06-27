@@ -22,7 +22,8 @@ import { NgContentComponent } from './ng-content/ng-content.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component'
 import { RendererDirectiveDirective } from './renderer-directive/renderer-directive.directive'
 import { AttributeDirectiveDirective } from './attribute-directive/attribute-directive.directive';
-import { NgSwitchComponent } from './ng-switch/ng-switch.component'
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { DependancyInjectonComponent } from './dependancy-injecton/dependancy-injecton.component'
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component'
     LifecycleHooksComponent,
     RendererDirectiveDirective,
     AttributeDirectiveDirective,
-    NgSwitchComponent
+    NgSwitchComponent,
+    DependancyInjectonComponent
   ],
   imports: [
     BrowserModule,
