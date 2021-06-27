@@ -28,7 +28,8 @@ import { DataServiceOneComponent } from './data-service-one/data-service-one.com
 import { DataServiceTwoComponent } from './data-service-two/data-service-two.component';
 import { CustomObservableComponent } from './custom-observable/custom-observable.component';
 import { PipesComponent } from './pipes/pipes.component';
-import { ShortenPipePipe } from './shorten-pipe/shorten-pipe.pipe'
+import { ShortenPipePipe } from './shorten-pipe/shorten-pipe.pipe';
+import { FilterPipePipe } from './filter-pipe/filter-pipe.pipe'
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { ShortenPipePipe } from './shorten-pipe/shorten-pipe.pipe'
     DataServiceTwoComponent,
     CustomObservableComponent,
     PipesComponent,
-    ShortenPipePipe
+    ShortenPipePipe,
+    FilterPipePipe
   ],
   imports: [
     BrowserModule,

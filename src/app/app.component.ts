@@ -8,4 +8,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-angular-app';
+  filterValue=''
+  list=['Pranesh', 'Ganesh']
 }

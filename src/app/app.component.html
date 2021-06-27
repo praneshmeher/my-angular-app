@@ -11,4 +11,9 @@
 <!-- <app-data-service-one></app-data-service-one>
 <app-data-service-two></app-data-service-two> -->
 
-<div>{{title | shortenPipe:2}}</div>
+<!-- <div>{{title | shortenPipe:2}}</div> -->
+
+<input type="text" [(ngModel)]="filterValue">
+<ul>
+    <li *ngFor="let item of list | filterPipe:filterValue">{{item}}</li>
+</ul>
