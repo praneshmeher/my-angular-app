@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'
+import { HttpClient } from '@angular/common/http'
+
 
 import { AppComponent } from './app.component';
 import { AttributeComponent } from './attribute/attribute.component';
@@ -66,7 +68,8 @@ import { AsyncPipeComponent } from './async-pipe/async-pipe.component'
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]
