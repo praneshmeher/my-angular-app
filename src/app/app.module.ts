@@ -21,7 +21,8 @@ import { ViewChildComponent } from './view-child/view-child.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component'
 import { RendererDirectiveDirective } from './renderer-directive/renderer-directive.directive'
-import { AttributeDirectiveDirective } from './attribute-directive/attribute-directive.directive'
+import { AttributeDirectiveDirective } from './attribute-directive/attribute-directive.directive';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component'
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { AttributeDirectiveDirective } from './attribute-directive/attribute-dir
     NgContentComponent,
     LifecycleHooksComponent,
     RendererDirectiveDirective,
-    AttributeDirectiveDirective
+    AttributeDirectiveDirective,
+    NgSwitchComponent
   ],
   imports: [
     BrowserModule,
