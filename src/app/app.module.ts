@@ -26,7 +26,8 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { DependancyInjectonComponent } from './dependancy-injecton/dependancy-injecton.component';
 import { DataServiceOneComponent } from './data-service-one/data-service-one.component';
 import { DataServiceTwoComponent } from './data-service-two/data-service-two.component';
-import { CustomObservableComponent } from './custom-observable/custom-observable.component'
+import { CustomObservableComponent } from './custom-observable/custom-observable.component';
+import { PipesComponent } from './pipes/pipes.component'
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { CustomObservableComponent } from './custom-observable/custom-observable
     DependancyInjectonComponent,
     DataServiceOneComponent,
     DataServiceTwoComponent,
-    CustomObservableComponent
+    CustomObservableComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
