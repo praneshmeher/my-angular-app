@@ -13,6 +13,7 @@ export class HttpServiceService {
   postData(config:any){
     this.http.post("https://reqres.in/api/users",config,
     {
+      observe:'response',
       headers:new HttpHeaders({'custom-header':'value'})
     })
     .pipe(
@@ -29,7 +30,10 @@ export class HttpServiceService {
   }
 
   getData(){
-    return this.http.get("https://reqres.in/api/users?page=2")
+    return this.http.get("https://reqres.in/api/users?page=2",{
+      observe:'response',
+      responseType:'text'
+    })
   }
 
 }
