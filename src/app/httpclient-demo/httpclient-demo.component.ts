@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { map } from 'rxjs/operators'
+import { HttpServiceService } from "../http-service/http-service.service";
 
 @Component({
   selector: 'app-httpclient-demo',
@@ -9,26 +9,21 @@ import { map } from 'rxjs/operators'
 })
 export class HttpclientDemoComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpServiceService) { }
 
   ngOnInit(): void {
-    this.http.post("https://reqres.in/api/users",{
+    
+    this.http.postData({
       "name": "morpheus",
       "job": "leader"
     })
-    .pipe(
-      map((data:any)=>{
-        return {...data, name : 'Pranesh'} 
-      })
-    )
-    .subscribe((data)=>{
-      console.log(data)
-    })
 
-    this.http.get("https://reqres.in/api/users?page=2")
-    .subscribe((data)=>{
+    this.http.getData().subscribe((data)=>{
       console.log(data)
+    },(error)=>{
+      console.log(error)
     })
+    
   }
 
 }
