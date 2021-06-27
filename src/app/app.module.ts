@@ -29,7 +29,8 @@ import { DataServiceTwoComponent } from './data-service-two/data-service-two.com
 import { CustomObservableComponent } from './custom-observable/custom-observable.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ShortenPipePipe } from './shorten-pipe/shorten-pipe.pipe';
-import { FilterPipePipe } from './filter-pipe/filter-pipe.pipe'
+import { FilterPipePipe } from './filter-pipe/filter-pipe.pipe';
+import { AsyncPipeComponent } from './async-pipe/async-pipe.component'
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { FilterPipePipe } from './filter-pipe/filter-pipe.pipe'
     CustomObservableComponent,
     PipesComponent,
     ShortenPipePipe,
-    FilterPipePipe
+    FilterPipePipe,
+    AsyncPipeComponent
   ],
   imports: [
     BrowserModule,
