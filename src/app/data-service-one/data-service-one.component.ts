@@ -16,6 +16,7 @@ export class DataServiceOneComponent implements OnInit {
   onClick(){
     this.dataService.data.push('new data')
     this.dataService.dataUpdated.emit('event data')
+    this.dataService.subject.next('subject data')
   }
 
 }
