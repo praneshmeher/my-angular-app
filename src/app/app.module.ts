@@ -25,7 +25,8 @@ import { AttributeDirectiveDirective } from './attribute-directive/attribute-dir
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { DependancyInjectonComponent } from './dependancy-injecton/dependancy-injecton.component';
 import { DataServiceOneComponent } from './data-service-one/data-service-one.component';
-import { DataServiceTwoComponent } from './data-service-two/data-service-two.component'
+import { DataServiceTwoComponent } from './data-service-two/data-service-two.component';
+import { CustomObservableComponent } from './custom-observable/custom-observable.component'
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { DataServiceTwoComponent } from './data-service-two/data-service-two.com
     NgSwitchComponent,
     DependancyInjectonComponent,
     DataServiceOneComponent,
-    DataServiceTwoComponent
+    DataServiceTwoComponent,
+    CustomObservableComponent
   ],
   imports: [
     BrowserModule,
